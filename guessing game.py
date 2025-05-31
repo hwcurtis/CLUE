@@ -18,7 +18,16 @@ if choice == "left":
     if swim == "swim":
         print("You bravely swim across the water, hoping for the best...")
     else:
-        print("You continue on foot, keeping an eye on the ticking clock...")
+print("You continue on foot, keeping an eye on the ticking clock...")
+print("All of a sudden you see a Bike!")
+bike_choice = input(
+    "Do you jump on the bike or start to run? (bike/run): ").lower()
+if bike_choice == "bike":
+    print("You jump on the bike and speed away, hoping you don't crash!")
+elif bike_choice == "run":
+    print("You start to run as fast as you can, hoping to beat the clock!")
+else:
+    print("LOOK AT THAT just in TIME!")
 
 elif choice == "right":
     print("Right looks the safest as far as you can tell, but what lies ahead?")
@@ -32,7 +41,8 @@ elif choice == "right":
     elif action == "hide":
         print("You hide and the noise passes. You feel safer and move on.")
     elif action == "throw":
-        print(f"You throw your {item}, but nothing happens. You continue, now unarmed.")
+        print(
+            f"You throw your {item}, but nothing happens. You continue, now unarmed.")
     else:
         print("Unable to decide, you lose precious time.")
 
