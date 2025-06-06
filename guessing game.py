@@ -1,4 +1,4 @@
-print("Welcome to the game of choice, you have less than an hour to make your way out safely, anymore time may result in unfavorable outcome, ")
+print("Welcome to the game of choice, you have less than an hour to make your way out safely. Any more time may result in an unfavorable outcome.")
 
 name = input("If you dare to enter, please tell us your name: ")
 
@@ -14,25 +14,28 @@ if choice == "left":
     print("You find yourself going down a steep hill, not sure what will be at the bottom.")
     print("You reach the bottom and find a snorkel and goggles. Ahead of you is a body of water.")
     swim = input(
-        "Do you swim across or continue on foot? (swim/foot): ").lower()
+        "Do you swim or continue on foot? (swim/foot): ").lower()
     if swim == "swim":
         print("You bravely swim across the water, hoping for the best...")
+    elif swim == "foot":
+        print("You continue on foot, keeping an eye on the ticking clock...")
+
+    bike_choice = input(
+        "Do you jump on the bike or start to run? (bike/run): ").lower()
+    if bike_choice == "bike":
+        print("You jump on the bike and speed away, hoping you don't crash!")
+    elif bike_choice == "run":
+        print("You start to run as fast as you can, hoping to beat the clock!")
     else:
-print("You continue on foot, keeping an eye on the ticking clock...")
-print("All of a sudden you see a Bike!")
-bike_choice = input(
-    "Do you jump on the bike or start to run? (bike/run): ").lower()
-if bike_choice == "bike":
-    print("You jump on the bike and speed away, hoping you don't crash!")
-elif bike_choice == "run":
-    print("You start to run as fast as you can, hoping to beat the clock!")
-else:
-    print("LOOK AT THAT just in TIME!")
+        print("Invalid choice. You hesitate and lose precious time!")
 
 elif choice == "right":
     print("Right looks the safest as far as you can tell, but what lies ahead?")
     print("As you start to move in that direction, you trip over an object, which you later realize is a bucket with a knife, gun, and rope.")
     item = input("Which one would you choose? (knife/gun/rope): ").lower()
+    if item not in ["knife", "gun", "rope"]:
+        print("Invalid choice. You hesitate and lose precious time!")
+
     print(f"You pick up the {item} and proceed cautiously...")
     print("As you continue right, you hear a noise. Do you wait to see what it is, hide and wait for it to pass, or throw your weapon and hope for the best?")
     action = input("What do you do? (wait/hide/throw): ").lower()
@@ -51,3 +54,5 @@ elif choice == "straight":
     print("You climb the steep hill, determined to find your way out...")
 else:
     print("WOW that was fast you must join our team ")
+
+    print("Congratulations on playing this game, we hope to see you again real soon.")
