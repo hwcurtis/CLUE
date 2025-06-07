@@ -32,22 +32,19 @@ if choice == "left":
 elif choice == "right":
     print("Right looks the safest as far as you can tell, but what lies ahead?")
     print("As you start to move in that direction, you trip over an object, which you later realize is a bucket with a knife, gun, and rope.")
-    item = input("Which one would you choose? (knife/gun/rope): ").lower()
-    if item not in ["knife", "gun", "rope"]:
+    item = input("Which one would you choose? (knife/rope): ").lower()
+    if item not in ["knife", "rope"]:
         print("Invalid choice. You hesitate and lose precious time!")
-
-    print(f"You pick up the {item} and proceed cautiously...")
-    print("As you continue right, you hear a noise. Do you wait to see what it is, hide and wait for it to pass, or throw your weapon and hope for the best?")
-    action = input("What do you do? (wait/hide/throw): ").lower()
-    if action == "wait":
-        print("You wait and see a harmless animal pass by. You continue on your way.")
-    elif action == "hide":
-        print("You hide and the noise passes. You feel safer and move on.")
-    elif action == "throw":
-        print(
-            f"You throw your {item}, but nothing happens. You continue, now unarmed.")
     else:
-        print("Unable to decide, you lose precious time.")
+        print(f"You pick up the {item} and proceed cautiously...")
+        print("As you continue right, you hear a noise. Do you wait to see what it is, hide and wait for it to pass, or throw your weapon and hope for the best?")
+        action = input("What do you do? (wait/hide/): ").lower()
+        if action == "wait":
+            print("You wait and see a harmless animal pass by. You continue on your way.")
+        elif action == "hide":
+            print("You hide and the noise passes. You feel safer and move on.")
+        else:
+            print("Unable to decide, you lose precious time.")
 
 elif choice == "straight":
     print("Straight ahead seems to be the way you want to go, but your fear of heights makes you hesitate")
