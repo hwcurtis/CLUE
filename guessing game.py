@@ -1,7 +1,9 @@
 import random
 import sys
-print("""Welcome to the game of choice, you have less than an hour to make your way out safely. Any more time may result in an unfavorable outcome, or simply type exit to quit if
-you fear for your life.""")
+print("""Welcome, to todays  challenge, there has been an SOS from a group of people , we are unsure the number but they have given a location on
+ a forgotten Island , this is the information we were provided, shoud you choose to proceed, please enter your name below, however 
+ if you have a change of heart, dont hesitate to exit and allow someone else a chance .""")
+
 
 name = input("What is your name? ").strip()
 
@@ -9,7 +11,6 @@ name = input("What is your name? ").strip()
 if name.lower() == "exit":
     print("You have chosen to exit the game. Wise Choice  Goodbye!")
     sys.exit()
-    exit()
 
 
 print(f"Welcome {name}, please let's get started as time is ticking.")
