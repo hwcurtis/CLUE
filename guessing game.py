@@ -1,19 +1,22 @@
 import random
+import sys
 print("""Welcome to the game of choice, you have less than an hour to make your way out safely. Any more time may result in an unfavorable outcome, or simply type exit to quit if
 you fear for your life.""")
 
+name = input("What is your name? ").strip()
 
-name = input("If you dare to enter, please tell us your name: ").strip()
+
 if name.lower() == "exit":
     print("You have chosen to exit the game. Wise Choice  Goodbye!")
+    sys.exit()
     exit()
 
 
 print(f"Welcome {name}, please let's get started as time is ticking.")
 
 
-print("""This being a game of best choices, and limited time, you want to find the correct path. There are two: one to the right,
-and one to the left, which one leads to the lost island?  Remember, time starts ticking as soon as you tell us your name, and the people on the island are counting on you """)
+print("""This being a game of search and rescue,the details you have been told, there is an island, in which people have been stranded, they sent out an sos ,
+      there is a need for an emergency rescue """)
 
 
 print("""The one to the right is closest and the path looks easy, but what lies beyond?
@@ -54,4 +57,4 @@ elif "jet ski" in boat_choice or "jetski" in boat_choice:
 elif "fishing" in boat_choice or "engine" in boat_choice:
     print("There should be enough room to carry supplies and if needed a few people can return with you.")
 else:
-print("You hesitate to choose a vessel, and time is running out!")
+    print("You hesitate to choose a vessel, and time is running out!")
