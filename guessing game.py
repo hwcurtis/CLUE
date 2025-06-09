@@ -2,7 +2,10 @@ import random
 import sys
 print("""Welcome, to todays  challenge, there has been an SOS from a group of people , we are unsure the number but they have given a location on
  a forgotten Island , this is the information we were provided, shoud you choose to proceed, please enter your name below, however 
- if you have a change of heart, dont hesitate to exit and allow someone else a chance .""")
+ if you have a change of heart, dont hesitate to exit and allow someone else a chance ,.""") 
+
+The cordinates are latitude 22 04'60.00"N
+-159 29' 59.99"W
 
 
 name = input("What is your name? ").strip()
