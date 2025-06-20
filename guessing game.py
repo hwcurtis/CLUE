@@ -1,4 +1,3 @@
-import random
 import sys
 print("""Welcome, to todays  challenge, there has been an SOS from a group of people , we are unsure the number but they have given a location on
  a forgotten Island , this is the information we were provided, shoud you choose to proceed, please enter your name below, however
