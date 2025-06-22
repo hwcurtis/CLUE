@@ -3,24 +3,29 @@ import time
 
 print('WELCOME TO THE RESCUE MISSION, should you choose to accept it!')
 print("""These are the details we have at the moment, folks are in need of rescue on a remote island, we know
-      very little information about the situation, other than we are working to find the coordinates  and will be provided to you should you
-choose to accept such challenges. Please start moving quickly to the next stop, instructions will be provided as you go along.
+      very little information about the situation, but will be providing more information soon should you
+choose to accept such challenges. Please maek your decision quickly as folks are waiting on a rescue 
 """)
 
+print("Good luck and may the odds be ever in your favour!")
 
-choice = input(
-    "Do you want to run or hide? ").strip().lower()
-if choice == 'run':
-    print("You chose to run! You sprint towards the rescue point.")
-elif choice == 'hide':
-    print("You chose to hide! You find a safe spot and wait for the rescue team.")
+
+name = input("If you dare to proceed, please tell us your name: ").strip()
+
+allowed_names = ["george", "william", "chris", "bre", "riley"]
+
+if name.lower() in allowed_names:
+    print(
+        f"Welcome, {name.capitalize()}. Let's get started — time is ticking!")
 else:
-    print("Invalid choice! You must choose either 'run' or 'hide'.")
-    sys.exit()
+    print("Be wise and wait right there. You will be escorted to the exit.")
+    time.sleep(2)
+    choice = input(
+        "...unless you'd rather run and hide? Choose quickly! (run/hide/exit): ").strip().lower()
 
 
-print("You have made your choice, now let's see what happens next.")
-print("You are now at the rescue point, and see a few boats. Which one would you choose: the sailboat, the motorboat, or the kayak?")
+# print("You have made your choice, now let's see what happens next.")
+# print("You are now at the rescue point, and see a few boats. Which one would you choose: the sailboat, the motorboat, or the kayak?")
 
 
 # print('you dont want to exit, you have come to help, your options are to run or hide, what do you choose?')
