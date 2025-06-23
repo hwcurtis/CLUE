@@ -21,16 +21,18 @@ else:
     print("Be wise and wait right there. You will be escorted to the exit.")
     time.sleep(2)
     choice = input(
-        "...unless you'd rather run and hide? Choose quickly! (run/hide/exit): ").strip().lower()
+        "You don't want to exit, you have come to help. What do you choose (run/hide/exit): ").strip().lower()
 
 
 # print("You have made your choice, now let's see what happens next.")
 # print("You are now at the rescue point, and see a few boats. Which one would you choose: the sailboat, the motorboat, or the kayak?")
 
 
-# print('you dont want to exit, you have come to help, your options are to run or hide, what do you choose?')
+#
 # print("You have chosen to exit the game. Wise Choice  Goodbye!")
 # sys.exit()
 # if name.lower() == "exit":
 #   print("You have chosen to exit the game. Wise Choice. Goodbye!")
 #  sys.exit()
+
+    #  "...unless you'd rather run and hide? Choose quickly! (run/hide/exit): ").strip().lower()
